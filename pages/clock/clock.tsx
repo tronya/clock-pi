@@ -1,8 +1,9 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
 import styles from './../../styles/Clock.module.scss';
 
 const Clock = () => {
-    const [timestamp, setTimeStamp] = useState<Date>(new Date())
+    const [timestamp, setTimeStamp] = useState<Date>(new Date("December 17, 1995 03:24:00"))
 
     useEffect(() => {
       const timer = setInterval(() => {

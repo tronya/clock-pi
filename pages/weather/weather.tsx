@@ -1,3 +1,4 @@
+import React from 'react'
 import useSwr from 'swr'
 import { WeatherResp } from '../api/weather'
 import styles from "./../../styles/weather.module.scss"
