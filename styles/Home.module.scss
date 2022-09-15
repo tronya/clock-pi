@@ -1,0 +1,23 @@
+@import "./variables.module.scss";
+
+.container {
+  flex-direction: column;
+  width: 480px;
+  height: 320px;
+  border: 1px solid $white;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.row{
+  flex-direction: row;
+  width: 100%;
+}
