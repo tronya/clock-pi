@@ -1,0 +1,27 @@
+@import './variables.module.scss';
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+}
+
+.money p {
+    text-align: center;
+    font-size: 80px;
+    padding: 0;
+    margin: 0;
+    color: $main;
+}
+
+.money {
+    display: flex;
+    flex-direction: column;
+}
+
+.money b {
+    color: grey;
+    text-align: center;
+}

@@ -27,11 +27,11 @@ const Weather = () => {
             <img src={img_link} alt="" />
             </div>
             <div className={styles.weather__info}>
-                <p>City: {data.name}</p>
-                <p>Sunrise: {toTimeString(data.sys.sunrise)}</p>
-                <p>Sunset: {toTimeString(data.sys.sunset)}</p>
+                <p>City: <span>{data.name}</span></p>
+                <p>Sunrise: <span>{toTimeString(data.sys.sunrise)}</span></p>
+                <p>Sunset: <span>{toTimeString(data.sys.sunset)}</span></p>
 
-                <p>visibility: {data.visibility}</p>
+                <p>visibility: <span>{data.visibility}</span></p>
             </div>
         </div>
     )
