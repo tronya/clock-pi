@@ -10,7 +10,7 @@ const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
 const toTimeString = (time: Date) => new Date(time).toLocaleTimeString()
 const Weather = () => {
-    const { data, error } = useSwr<WeatherResp>(weatherUrl, fetcher)
+    const { data, error } = useSwr<WeatherResp>(weatherUrl, fetcher, {refreshInterval: 120000})
     console.log(data, error)
     if (error) return <div>Failed to load users</div>
     if (!data) return <div>Loading...</div>

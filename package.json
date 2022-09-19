@@ -7,11 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "display":"chromium-browser --kiosk http://localhost:3000 --window-position=0,0"
+    "display": "chromium-browser --kiosk http://localhost:3000 --window-position=0,0"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.3",
     "@mui/material": "^5.10.5",
     "next": "12.3.0",
     "react": "18.2.0",

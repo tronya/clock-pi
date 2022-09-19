@@ -6,9 +6,9 @@
   flex-direction: column;
   width: 480px;
   height: 320px;
-  // border: 1px solid $white;
+  border: 1px solid $gray;
   justify-content: center;
-  align-items: center;
+  display: flex;
   font-family: 'Roboto';
   background-color: $black;
   padding:0;
