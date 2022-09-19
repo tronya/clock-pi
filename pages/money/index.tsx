@@ -4,6 +4,9 @@ import Head from "next/head";
 import { Fragment, useEffect, useRef, useState } from "react";
 import styles from "../../styles/money.module.scss"
 
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import CreditScoreIcon from '@mui/icons-material/CreditScore';
+
 function useInterval(callback: any, delay: number) {
     const savedCallback = useRef();
 
@@ -23,7 +26,7 @@ function useInterval(callback: any, delay: number) {
 
 const Money: NextPage = () => {
     const [money, setMoney] = useState<number>(0)
-    const [celary, setCelary] = useState<number>(2900)
+    const [celary, setCelary] = useState<number>(5700)
 
     const counterCalculator = celary / 20 / 8 / 24 / 60;
 
@@ -38,14 +41,13 @@ const Money: NextPage = () => {
                 <title>Money</title>
             </Head>
             <div className={styles.container}>
-                <small>{celary}</small>
                 <div className={styles.money}>
                     <p>{money}</p>
-                    <b>$</b>
+                    <AttachMoneyIcon color="primary"/>
                 </div>
                 <div className={styles.money}>
                     <p>{(money * 42).toFixed(2)}</p>
-                    <b>hrn</b>
+                    <CreditScoreIcon color="primary"/>
                 </div>
                 <Button onClick={() => setMoney(0)}>Reset</Button>
             </div>
