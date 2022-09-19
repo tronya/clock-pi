@@ -20,6 +20,9 @@ Set up a script which run on desktop environment start.
 `nano /home/pi/.config/lxsession/LXDE-pi/autostart`
 Place here a config.
 
+Also command for external run project
+`yarn --cwd  /home/pi/Projects/clock-pi/  dev`
+
 ```
 @xset s off
 @xset -dpms
