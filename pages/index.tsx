@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Fragment } from 'react'
+import { Fragment} from 'react'
 import styles from '../styles/Home.module.scss'
 import Clock from './clock/clock'
 import Weather from './weather/weather'

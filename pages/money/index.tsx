@@ -26,7 +26,7 @@ function useInterval(callback: any, delay: number) {
 
 const Money: NextPage = () => {
     const [money, setMoney] = useState<number>(0)
-    const [celary, setCelary] = useState<number>(5700)
+    const [celary, setCelary] = useState<number>(1000)
 
     const counterCalculator = celary / 20 / 8 / 24 / 60;
 

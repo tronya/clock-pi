@@ -20,9 +20,6 @@ Set up a script which run on desktop environment start.
 `nano /home/pi/.config/lxsession/LXDE-pi/autostart`
 Place here a config.
 
-Also command for external run project
-`yarn --cwd  /home/pi/Projects/clock-pi/  dev`
-
 ```
 @xset s off
 @xset -dpms
@@ -30,4 +27,18 @@ Also command for external run project
 @chromium-browser --kiosk --incognito -disable-translate --app=https://localhost:3000
 @unclutter -idle 0
 Now you can restart RPi and see a result.
+
+or such command
+@chromium-browser --noerrdialogs --incognito --autoplay-policy=no-user-gesture-required  --simulate-critical-update --kiosk http://localhost:3000
 ```
+
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@xscreensaver -no-splash
+
+@xset s off
+@xset s 0 0 0
+@xset -dpms
+@xset s noblank
+@xset s noexpose@xset dpms 0 0 0
+@lxterminal -command "~/Projects/clock-pi/startup.shl"

@@ -1,0 +1,17 @@
+#!/bin/bash
+echo "cpu tempreture"
+vcgencmd measure_temp | egrep  -o  '[[:digit:]].*'
+
+cd ~/Projects/clock-pi/
+echo "Config script start"
+export DISPLAY=$HOST_IP:0.0 && 
+xset s off
+xset -dpms
+xset s noblank
+chromium-browser --kiosk --incognito -disable-translate --app=http://localhost:3000
+unclutter -idle 0
+
+echo "starting project"
+sleep 2
+yarn dev
+echo "project started"

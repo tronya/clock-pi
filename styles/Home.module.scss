@@ -1,12 +1,9 @@
 @import "./variables.module.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Codystar&display=swap');
-
 .container {
   flex-direction: column;
   width: 480px;
   height: 320px;
-  border: 1px solid $gray;
   justify-content: center;
   display: flex;
   font-family: 'Roboto';
