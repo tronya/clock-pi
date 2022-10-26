@@ -55,6 +55,7 @@ export default function handler(
       country:"",
       sunrise: new Date(),
       sunset: new Date()
-    }
+    },
+    weather:[]
   })
 }

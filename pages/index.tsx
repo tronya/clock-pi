@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
 import { Fragment} from 'react'
 import styles from '../styles/Home.module.scss'
-import Clock from './clock/clock'
-import Weather from './weather/weather'
+import Clock from '../components/clock/clock'
+import Weather from '../components/weather/weather'
 
 const Home: NextPage = () => {
   return (
